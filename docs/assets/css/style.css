@@ -1,0 +1,276 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@font-face {
+    font-family: "Metrpolis-ant";
+  src: url("../fonts/metropolis/Metropolis-Regular.otf") format("otf");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+    font-family: "Metrpolis-ant";
+  src: url("../fonts/metropolis/Metropolis-SemiBold.otf") format("otf");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+    font-family: "Metrpolis-ant";
+  src: url("../fonts/metropolis/Metropolis-Bold.otf") format("otf");
+  font-style: normal;
+  font-weight: 700;
+}
+/* Default Styles */
+*,
+*::after,
+*::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    color: rgba(112, 100, 88, 0.9);
+    font-family: "Varta", sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    width: 1076px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin: 0 auto;
+}
+
+a {
+    color: #a06056;
+    text-decoration: none;
+}
+
+.logo {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-size: 2.125rem;
+    line-height: 1em;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #a06056;
+    border-radius: 50%;
+}
+
+.btn__icon {
+    width: 26px;
+    height: 26px;
+}
+
+.header {
+    padding-top: 55px;
+    padding-bottom: 215px;
+    background-image: url("../img/header-bg.jpg");
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.header__logo {
+    margin-bottom: 9px;
+}
+
+.header__top-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 110px;
+}
+
+.header__nav {
+    margin-left: 32px;
+    margin-right: auto;
+}
+
+.header__comment {
+    position: absolute;
+    right: 50px;
+    border: 2px solid white;
+}
+
+.header__comment > .btn__icon {
+    fill: white;
+}
+
+.header__tags {
+    margin-bottom: 56px;
+    color: #a06056;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1em;
+}
+
+.header__title {
+    display: block;
+    width: 420px;
+    margin-bottom: 30px;
+    font-family: "Merriweather", serif;
+    color: #a06056;
+    font-weight: 300;
+    font-size: 3.125rem;
+    line-height: 1.4em;
+}
+
+.header__description {
+    display: block;
+    width: 380px;
+    margin-bottom: 48px;
+    font-weight: 300;
+    font-size: 1.375rem;
+    line-height: 1.4em;
+}
+
+.header__arrow > .btn__icon {
+    width: 16px;
+    height: 10px;
+    fill: #a06056;
+}
+
+.nav__list {
+    display: flex;
+    -moz-column-gap: 24px;
+    column-gap: 24px;
+}
