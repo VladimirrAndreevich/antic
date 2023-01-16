@@ -162,7 +162,7 @@ table {
 }
 
 .body {
-    color: rgba(112, 100, 88, 0.9);
+    color: #706458;
     font-family: "Varta", sans-serif;
     font-weight: 400;
 }
@@ -207,6 +207,7 @@ a {
     background-image: url("../img/header-bg.jpg");
     background-position: right center;
     background-repeat: no-repeat;
+    background-color: #f3eee8;
 }
 
 .header__logo {
@@ -273,4 +274,131 @@ a {
     display: flex;
     -moz-column-gap: 24px;
     column-gap: 24px;
+}
+
+.footer {
+    padding-top: 70px;
+    padding-bottom: 64px;
+    background-color: #f3eee8;
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+    -moz-column-gap: 64px;
+    column-gap: 64px;
+}
+
+.footer__logo {
+    color: #534b42;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 683px;
+}
+
+.footer-nav__heading {
+    display: block;
+    margin-bottom: 22px;
+    color: #534b42;
+    font-weight: 600;
+    font-size: 1.5625rem;
+    line-height: 1.2em;
+}
+
+.footer-nav__link {
+    display: block;
+    margin-bottom: 12px;
+    color: #706458;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.39em;
+}
+
+.footer__bottom {
+    margin-top: 48px;
+}
+
+.footer__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    color: #706458;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.39em;
+}
+
+.footer__copyright {
+    opacity: 0.7;
+}
+
+.footer__info {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 350px;
+}
+
+.footer__info-link {
+    color: inherit;
+    opacity: 0.7;
+}
+
+.respect {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 240px;
+}
+
+.respect__heading {
+    display: inline-block;
+    margin-bottom: 24px;
+    color: #534b42;
+    font-weight: 600;
+    font-size: 1.5625rem;
+    line-height: 1.2em;
+}
+
+.respect__learn {
+    font-weight: 700;
+    font-size: 1.0625rem;
+    line-height: 1.47em;
+}
+
+.respect__arrow {
+    width: 14px;
+    height: 10px;
+    margin-left: 7px;
+    fill: #a06056;
+    transform: rotate(270deg);
+}
+
+.respect__img {
+    margin-bottom: 9px;
+}
+
+.respect__description {
+    margin-bottom: 15px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    -moz-column-gap: 24px;
+    column-gap: 24px;
+}
+
+.socials__link {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+.socials__icon {
+    width: 32px;
+    height: 32px;
+    fill: #706458;
 }
