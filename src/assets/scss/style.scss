@@ -24,21 +24,27 @@
 }
 
 .container {
-  width: 1076px;
+  width: 100%;
   padding-left: 32px;
   padding-right: 32px;
-
-  margin: 0 auto;
 }
 
+// .container {
+//   width: 1076px;
+//   padding-left: 32px;
+//   padding-right: 32px;
+
+//   margin: 0 auto;
+// }
+
 a {
-  color: $accent;
   text-decoration: none;
 }
 
 .logo {
   font-family: "Merriweather", serif;
-  @include font(700, 2.125rem, 1em);
+  color: $base-white;
+  @include font(700, 2.125rem, 0.7352em);
 }
 
 .btn {
@@ -49,85 +55,161 @@ a {
   width: 50px;
   height: 50px;
 
-  border: 2px solid $accent;
+  border: 2px solid $base-white;
   border-radius: 50%;
 
   &__icon {
-    width: 26px;
-    height: 26px;
+    fill: $base-white;
+    width: 24px;
+    height: 24px;
   }
 }
 
 // header
+
 .header {
-  padding-top: 55px;
-  padding-bottom: 215px;
+  & > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  padding-top: 51px;
+  padding-bottom: 177px;
+
+  color: $base-white;
 
   background-image: url("../img/header-bg.jpg");
-  background-position: right center;
+  background-position: center;
   background-repeat: no-repeat;
-  background-color: $bg-color;
+  background-size: cover;
 
-  &__logo {
-    margin-bottom: 9px;
-  }
   &__top-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    margin-bottom: 110px;
+    align-self: normal;
   }
+
   &__nav {
-    margin-left: 32px;
-    margin-right: auto;
+    display: none;
   }
-  &__comment {
-    position: absolute;
-    right: 50px;
 
-    border: 2px solid white;
-    & > .btn__icon {
-      fill: white;
+  &__comment {
+    display: none;
+  }
+
+  &__burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 24px;
+    height: 12px;
+    &-line {
+      height: 2px;
+
+      background-color: $base-white;
     }
   }
-  &__tags {
-    margin-bottom: 56px;
 
-    color: $accent;
-    @include font(700, 0.875rem, 1em);
+  &__tags {
+    margin-top: 108px;
+    @include font(700, 0.875rem, 1.428em);
   }
+
   &__title {
-    display: block;
-    width: 420px;
-    margin-bottom: 30px;
+    margin-top: 24px;
 
     font-family: "Merriweather", serif;
-    color: $accent;
-    @include font(300, 3.125rem, 1.4em);
+    @include font(300, 2.1875rem, 1.1428em);
+    text-align: center;
   }
-  &__description {
-    display: block;
-    width: 380px;
 
-    margin-bottom: 48px;
-    @include font(300, 1.375rem, 1.4em);
+  &__description {
+    margin-top: 24px;
+    @include font(400, 1.125rem, 1.39em);
+    text-align: center;
   }
+
   &__arrow {
+    margin-top: 24px;
     & > .btn__icon {
       width: 16px;
-      height: 10px;
-      fill: $accent;
+      height: 9px;
     }
   }
 }
 
-.nav {
-  &__list {
-    display: flex;
-    column-gap: 24px;
-  }
-}
+// .header {
+//   padding-top: 55px;
+//   padding-bottom: 215px;
+
+//   background-image: url("../img/header-bg.jpg");
+//   background-position: right center;
+//   background-repeat: no-repeat;
+//   background-color: $bg-color;
+
+//   &__logo {
+//     margin-bottom: 9px;
+//   }
+//   &__top-wrapper {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+
+//     margin-bottom: 110px;
+//   }
+//   &__nav {
+//     margin-left: 32px;
+//     margin-right: auto;
+//   }
+//   &__comment {
+//     position: absolute;
+//     right: 50px;
+
+//     border: 2px solid white;
+//     & > .btn__icon {
+//       fill: white;
+//     }
+//   }
+//   &__tags {
+//     margin-bottom: 56px;
+
+//     color: $accent;
+//     @include font(700, 0.875rem, 1em);
+//   }
+//   &__title {
+//     display: block;
+//     width: 420px;
+//     margin-bottom: 30px;
+
+//     font-family: "Merriweather", serif;
+//     color: $accent;
+//     @include font(300, 3.125rem, 1.4em);
+//   }
+//   &__description {
+//     display: block;
+//     width: 380px;
+
+//     margin-bottom: 48px;
+//     @include font(300, 1.375rem, 1.4em);
+//   }
+//   &__arrow {
+//     & > .btn__icon {
+//       width: 16px;
+//       height: 10px;
+//       fill: $accent;
+//     }
+//   }
+// }
+
+// .nav {
+//   &__list {
+//     display: flex;
+//     column-gap: 24px;
+//   }
+// }
 
 //footer
 .footer {

@@ -1,0 +1,16 @@
+.header {
+    padding-top: 65px;
+    padding-bottom: 215px;
+}
+
+.header__title {
+    font-weight: 300;
+    font-size: 2.5rem;
+    line-height: 1.4em;
+}
+
+.header__description {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.39em;
+}

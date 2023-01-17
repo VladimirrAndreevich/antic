@@ -1,0 +1,64 @@
+// === variables ===
+@import "../_variables.scss";
+// === mixins ===
+@import "../_mixins.scss";
+//common
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+//header
+.header {
+  & > .container {
+  }
+
+  &__nav {
+    display: inline-block;
+    margin-right: auto;
+    margin-left: 32px;
+    & > .nav__list {
+      display: flex;
+      flex-direction: row;
+    }
+    & .nav__link {
+      padding: 4px 12px;
+
+      color: $base-color;
+
+      transition: color $transition-duration $transition-timing-function;
+      &:hover {
+        color: $accent;
+      }
+    }
+  }
+  &__logo {
+    transform: translateY(-4px);
+  }
+  &__comment {
+    position: absolute;
+    right: 40px;
+
+    display: flex;
+  }
+  &__burger {
+    display: none;
+  }
+  &__tags {
+    display: inline-block;
+  }
+
+  &__title {
+    width: 400px;
+    @include font(300, 3.125rem, 1.4em);
+  }
+
+  &__description {
+    width: 300px;
+    @include font(300, 1.375rem, 1.409em);
+  }
+
+  &__arrow {
+    margin-top: 48px;
+  }
+}
