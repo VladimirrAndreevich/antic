@@ -32,3 +32,133 @@
 a {
   text-decoration: none;
 }
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 50px;
+  height: 50px;
+
+  border: 2px solid $base-white;
+  border-radius: 50%;
+
+  &__icon {
+    fill: $base-white;
+  }
+}
+
+#burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 24px;
+  height: 12px;
+
+  & > .line {
+    height: 2px;
+    background-color: $base-white;
+  }
+}
+
+.logo {
+  font-family: "Merriweather", serif;
+  color: $base-white;
+  @include font(700, 2.125rem, 1em);
+}
+
+.hidden {
+  display: none;
+}
+
+// header
+.header {
+  padding-top: 50px;
+  padding-bottom: 177px;
+
+  background-image: url("../img/header-bg-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  & > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__top-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: normal;
+  }
+
+  &__tag {
+    margin-top: 92px;
+
+    color: $base-white;
+    @include font(700, 0.875rem, 1em);
+  }
+
+  &__title {
+    margin-top: 26px;
+
+    font-family: "Merriweather", serif;
+    color: $base-white;
+    @include font(300, 2.1875rem, 2.5rem);
+    text-align: center;
+  }
+
+  &__description {
+    margin-top: 24px;
+
+    color: $additional-white;
+    @include font(400, 1.125rem, 1.5625rem);
+    text-align: center;
+  }
+
+  &__btn {
+    margin-top: 44px;
+
+    & > .btn__icon {
+      width: 18px;
+      height: 10px;
+    }
+  }
+}
+
+.nav-mobile {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  width: 70%;
+
+  background-color: $base-white;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  &__link {
+    display: block;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    text-align: center;
+  }
+  &__close {
+    display: inline-block;
+  }
+  &__svg {
+    fill: $accent;
+    width: 50px;
+    height: 50px;
+  }
+}
