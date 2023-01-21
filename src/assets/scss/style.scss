@@ -104,6 +104,7 @@ a {
   }
 
   &__title {
+    max-width: 385px;
     margin-top: 26px;
 
     font-family: "Merriweather", serif;
@@ -113,6 +114,7 @@ a {
   }
 
   &__description {
+    max-width: 350px;
     margin-top: 24px;
 
     color: $additional-white;

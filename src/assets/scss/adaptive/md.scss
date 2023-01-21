@@ -1,0 +1,46 @@
+// === variables ===
+@import "../_variables.scss";
+
+// === mixins ===
+@import "../_mixins.scss";
+//common
+.logo {
+  color: $accent;
+}
+
+//headed
+.header {
+  background-image: url("../../img/header-bg-mobile.jpg");
+
+  background-position: right top;
+  background-size: auto;
+
+  & > .container {
+    align-items: flex-start;
+  }
+  &__tag {
+    color: $accent;
+  }
+
+  &__title {
+    max-width: 350px;
+
+    @include font(300, 2.625rem, 2.5rem);
+    color: $accent;
+    text-align: left;
+  }
+  &__description {
+    max-width: 300px;
+
+    color: $base-color;
+    text-align: left;
+  }
+
+  &__btn {
+    border: 2px solid $accent;
+
+    & > .btn__icon {
+      fill: $accent;
+    }
+  }
+}

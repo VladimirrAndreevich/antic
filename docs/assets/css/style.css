@@ -247,6 +247,7 @@ a {
 }
 
 .header__title {
+    max-width: 385px;
     margin-top: 26px;
     font-family: "Merriweather", serif;
     color: white;
@@ -257,6 +258,7 @@ a {
 }
 
 .header__description {
+    max-width: 350px;
     margin-top: 24px;
     color: #f7f8f9;
     font-weight: 400;
