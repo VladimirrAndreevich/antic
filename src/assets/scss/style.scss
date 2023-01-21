@@ -131,6 +131,15 @@ a {
 }
 
 .nav-mobile {
+  &::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
   position: fixed;
   right: 0;
   top: 0;
@@ -141,25 +150,45 @@ a {
 
   width: 70%;
 
-  background-color: $base-white;
+  background-color: $bg-color;
 
-  &__list {
-  }
   &__link {
     display: block;
     padding: 24px 36px;
     text-align: center;
-  }
-  &__close {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-right: 30px;
 
-    align-self: flex-end;
+    @include font(400, 1.125rem, 1em);
+    color: $base-color;
   }
-  &__svg {
-    fill: $accent;
-    width: 35px;
-    height: 35px;
+  & .close-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 24px;
+    height: 24px;
+
+    margin-top: 55px;
+    margin-bottom: 20px;
+    margin-right: 32px;
+    margin-left: auto;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+
+      width: 24px;
+      height: 2px;
+      background-color: $base-color;
+    }
+
+    &::after {
+      transform: rotate(45deg);
+    }
+    &::before {
+      transform: rotate(-45deg);
+    }
   }
 }
