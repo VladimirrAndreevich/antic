@@ -1,3 +1,11 @@
+#burger {
+    display: none;
+}
+
+.logo {
+    transform: translateY(-4px);
+}
+
 .header__tag {
     font-weight: 700;
     font-size: 1rem;
@@ -14,4 +22,36 @@
     font-weight: 300;
     font-size: 1.375rem;
     line-height: 1.9375rem;
+}
+
+.header #comment {
+    display: flex;
+}
+
+.header #comment > .btn__icon {
+    width: 26px;
+    height: 26px;
+}
+
+.nav {
+    display: block;
+    margin-left: 32px;
+    margin-right: auto;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__link {
+    padding: 5px 10px;
+    color: #706458;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.nav__link:hover {
+    color: #a06056;
 }

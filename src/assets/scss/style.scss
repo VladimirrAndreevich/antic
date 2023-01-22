@@ -130,6 +130,15 @@ a {
       height: 10px;
     }
   }
+
+  & #comment {
+    display: none;
+    
+  }
+}
+
+.nav {
+  display: none;
 }
 
 .nav-mobile {

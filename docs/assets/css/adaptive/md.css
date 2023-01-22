@@ -4,6 +4,7 @@
 
 .header {
     background-image: url("../../img/header-bg-mobile.jpg");
+    background-color: #f3eee8;
     background-position: right top;
     background-size: auto;
 }

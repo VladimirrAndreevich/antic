@@ -276,6 +276,14 @@ a {
     height: 10px;
 }
 
+.header #comment {
+    display: none;
+}
+
+.nav {
+    display: none;
+}
+
 .nav-mobile {
     position: fixed;
     right: 0;
