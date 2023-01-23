@@ -73,6 +73,12 @@ a {
   display: none !important;
 }
 
+.section-title {
+  font-family: "Merriweather", serif;
+  color: $additional-color;
+  @include font(400, 2.1875rem, 2.5rem);
+}
+
 // header
 .header {
   padding-top: 50px;
@@ -133,7 +139,6 @@ a {
 
   & #comment {
     display: none;
-    
   }
 }
 
@@ -200,6 +205,45 @@ a {
     }
     &::before {
       transform: rotate(-45deg);
+    }
+  }
+}
+
+//benefits
+.benefits {
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  background-color: $bg-color;
+
+  &__fint-out {
+    display: inline-block;
+    margin-top: 32px;
+
+    font-family: "Lato", sans-serif;
+    color: $accent;
+    @include font(900, 1.0625rem, 1.4705em);
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin-top: 41px;
+    row-gap: 40px;
+  }
+
+  &__item {
+    &-header {
+      color: $accent;
+      @include font(600, 1.5625rem, 1.875rem);
+    }
+    &-description {
+      margin-top: 5px;
+
+      color: $base-color;
+      @include font(400, 1.125rem, 1.5625rem);
     }
   }
 }

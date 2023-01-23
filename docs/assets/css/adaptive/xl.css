@@ -5,7 +5,7 @@
 }
 
 .header {
-    margin-bottom: 215px;
+    padding-bottom: 215px;
     background-image: url("../../img/header-bg.jpg");
     background-position: right -50px top;
 }
@@ -31,4 +31,9 @@
         background-image: url("../../img/header-bg.jpg");
         background-position: right top;
     }
+}
+
+.benefits > .container {
+    -moz-column-gap: 48px;
+    column-gap: 48px;
 }

@@ -8,7 +8,7 @@
 //header
 
 .header {
-  margin-bottom: 215px;
+  padding-bottom: 215px;
 
   background-image: url("../../img/header-bg.jpg");
   background-position: right -50px top;
@@ -30,5 +30,12 @@
   .header {
     background-image: url("../../img/header-bg.jpg");
     background-position: right top;
+  }
+}
+
+//benefits
+.benefits {
+  & > .container {
+    column-gap: 48px;
   }
 }

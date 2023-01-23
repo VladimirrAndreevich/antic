@@ -216,6 +216,14 @@ a {
     display: none !important;
 }
 
+.section-title {
+    font-family: "Merriweather", serif;
+    color: #534b42;
+    font-weight: 400;
+    font-size: 2.1875rem;
+    line-height: 2.5rem;
+}
+
 .header {
     padding-top: 50px;
     padding-bottom: 177px;
@@ -342,4 +350,43 @@ a {
 
 .nav-mobile .close-btn::before {
     transform: rotate(-45deg);
+}
+
+.benefits {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    background-color: #f3eee8;
+}
+
+.benefits__fint-out {
+    display: inline-block;
+    margin-top: 32px;
+    font-family: "Lato", sans-serif;
+    color: #a06056;
+    font-weight: 900;
+    font-size: 1.0625rem;
+    line-height: 1.4705em;
+}
+
+.benefits__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 41px;
+    row-gap: 40px;
+}
+
+.benefits__item-header {
+    color: #a06056;
+    font-weight: 600;
+    font-size: 1.5625rem;
+    line-height: 1.875rem;
+}
+
+.benefits__item-description {
+    margin-top: 5px;
+    color: #706458;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
 }

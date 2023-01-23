@@ -6,6 +6,12 @@
     transform: translateY(-4px);
 }
 
+.section-title {
+    font-weight: 300;
+    font-size: 3.4375rem;
+    line-height: 3.75rem;
+}
+
 .header__tag {
     font-weight: 700;
     font-size: 1rem;
@@ -54,4 +60,24 @@
 
 .nav__link:hover {
     color: #a06056;
+}
+
+.benefits > .container {
+    display: flex;
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+}
+
+.benefits__wrap {
+    flex-shrink: 1;
+}
+
+.benefits__wrap > .section-title {
+    min-width: 458px;
+    max-width: 459px;
+}
+
+.benefits__list {
+    margin-top: 0;
+    flex-shrink: 2;
 }

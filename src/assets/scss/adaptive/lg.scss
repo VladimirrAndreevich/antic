@@ -13,6 +13,10 @@
   transform: translateY(-4px);
 }
 
+.section-title {
+  @include font(300, 3.4375rem, 3.75rem);
+}
+
 //header
 .header {
   &__tag {
@@ -52,5 +56,24 @@
     &:hover {
       color: $accent;
     }
+  }
+}
+
+//benefits
+.benefits {
+  & > .container {
+    display: flex;
+    column-gap: 40px;
+  }
+  &__wrap {
+    flex-shrink: 1;
+    & > .section-title {
+      min-width: 458px;
+      max-width: 459px;
+    }
+  }
+  &__list {
+    margin-top: 0;
+    flex-shrink: 2;
   }
 }

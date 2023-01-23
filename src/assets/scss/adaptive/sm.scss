@@ -3,3 +3,13 @@
 .header {
   background-image: url("../../img/header-bg.jpg");
 }
+
+//benefits
+.benefits {
+  &__list {
+    column-gap: 40px;
+  }
+  &__item {
+    flex: 1 1 46%;
+  }
+}
