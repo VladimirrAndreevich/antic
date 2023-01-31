@@ -78,7 +78,7 @@ a {
 .section-title {
   font-family: "Merriweather", serif;
   color: $additional-color;
-  @include font(400, 2.1875rem, 2.5rem);
+  @include font(300, 2.1875rem, 2.5rem);
 }
 
 .heading-text {

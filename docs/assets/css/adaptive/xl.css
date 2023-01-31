@@ -34,6 +34,6 @@
 }
 
 .benefits > .container {
-    -moz-column-gap: 48px;
-    column-gap: 48px;
+    -moz-column-gap: 100px;
+    column-gap: 100px;
 }
