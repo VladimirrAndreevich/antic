@@ -118,3 +118,12 @@
 .rooms__btn-next:hover::after {
     margin-left: 12px;
 }
+
+.subscribe__form {
+    flex-direction: row;
+}
+
+.subscribe__submit {
+    padding-left: 29px;
+    padding-right: 29px;
+}

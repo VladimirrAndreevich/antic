@@ -14,3 +14,10 @@
 .rooms .heading-text {
     max-width: 329px;
 }
+
+.subscribe > .container {
+    display: flex;
+    justify-content: space-between;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+}

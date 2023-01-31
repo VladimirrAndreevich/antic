@@ -363,6 +363,12 @@ a {
   padding-top: 48px;
   padding-bottom: 32px;
 
+  & .subscribe__title {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    color: #121212;
+    font-size: math.div(35px, 16px) + rem;
+  }
   & .heading-text {
     margin-top: 16px;
   }

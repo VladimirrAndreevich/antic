@@ -20,3 +20,13 @@
     max-width: 329px;
   }
 }
+
+// subscribe
+.subscribe {
+  & > .container {
+    display: flex;
+    justify-content: space-between;
+
+    column-gap: 20px;
+  }
+}

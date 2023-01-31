@@ -47,3 +47,8 @@
 .rooms__slide-title {
     font-size: 2.8125rem;
 }
+
+.subscribe > .container {
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+}

@@ -58,3 +58,10 @@
     }
   }
 }
+
+// subscribe
+.subscribe {
+  & > .container {
+    column-gap: 40px;
+  }
+}

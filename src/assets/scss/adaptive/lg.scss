@@ -122,3 +122,14 @@
     }
   }
 }
+
+// subscribe
+.subscribe {
+  &__form {
+    flex-direction: row;
+  }
+  &__submit {
+    padding-left: 29px;
+    padding-right: 29px;
+  }
+}
