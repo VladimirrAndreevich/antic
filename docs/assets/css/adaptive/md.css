@@ -39,3 +39,11 @@
 .header__btn > .btn__icon {
     fill: #a06056;
 }
+
+.rooms__swiper {
+    height: 300px;
+}
+
+.rooms__slide-title {
+    font-size: 2.8125rem;
+}

@@ -1,3 +1,5 @@
+@use "sass:math";
+
 @import "_reset.scss";
 
 // === font-face ===
@@ -77,6 +79,14 @@ a {
   font-family: "Merriweather", serif;
   color: $additional-color;
   @include font(400, 2.1875rem, 2.5rem);
+}
+
+.heading-text {
+  margin-top: 20px;
+
+  font-weight: 400;
+  font-size: math.div(18px, 16px) + rem;
+  line-height: math.div(25px, 16px) + rem;
 }
 
 // header
@@ -244,6 +254,75 @@ a {
 
       color: $base-color;
       @include font(400, 1.125rem, 1.5625rem);
+    }
+  }
+}
+
+// Rooms
+.rooms {
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  background-color: $bg-color;
+
+  &__swiper {
+    height: 232px;
+    margin-top: 33px;
+    &-pagination {
+      width: auto !important;
+
+      font-size: math.div(18px, 16px) + rem;
+      opacity: 0.9;
+    }
+  }
+  &__slide {
+    display: flex;
+
+    user-select: none;
+
+    &-img {
+      width: 50%;
+      height: 100%;
+      margin-right: 20px;
+    }
+    &-arrival {
+      color: rgba(0, 0, 0, 0.45);
+      font-size: math.div(18px, 16px) + rem;
+      line-height: math.div(25px, 16px) + rem;
+    }
+    &-title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      color: $accent;
+      font-size: math.div(35px, 16px) + rem;
+
+      transform: translate(-50%, -50%);
+      &_livingroom {
+        left: 70%;
+      }
+    }
+  }
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 30px;
+  }
+  &__btn-next {
+    font-family: "Karla", sans-serif;
+    color: $accent;
+    font-weight: 700;
+    font-size: math.div(20px, 16px) + rem;
+
+    cursor: pointer;
+
+    user-select: none;
+
+    &.swiper-button-disabled {
+      opacity: 0.5;
     }
   }
 }

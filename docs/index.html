@@ -37,6 +37,17 @@
       href="assets/css/adaptive/xl.min.css"
       media="(min-width: 1200px)"
     />
+    <link
+      rel="stylesheet"
+      href="assets/css/adaptive/xxl.min.css"
+      media="(min-width: 1400px)"
+    />
+    
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
   </head>
   <body class="body">
     
@@ -103,7 +114,74 @@
         </li>
       </ul>
     </nav>
-    <section class="benefits">
+     <section class="rooms">
+      <div class="container">
+        <div class="section-title">Find your room</div>
+        <p class="heading-text">
+          Dining room, bedroom, bathroom or office. Find what you need
+        </p>
+    
+        <div class="swiper rooms__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide rooms__slide">
+              <img
+                src="assets/img/rooms/bedroom.jpg"
+                alt="a bed in bedroom"
+                class="rooms__slide-img"
+              />
+              <div class="rooms__slide-arrival">News arrivals</div>
+              <div class="rooms__slide-title">Bedroom</div>
+            </div>
+            <div class="swiper-slide rooms__slide">
+              <img
+                src="assets/img/rooms/livingroom.jpg"
+                alt="a living room with pictures on the wall"
+                class="rooms__slide-img"
+              />
+              <div class="rooms__slide-arrival">News arrivals</div>
+              <div class="rooms__slide-title rooms__slide-title_livingroom">
+                Living room
+              </div>
+            </div>
+            <div class="swiper-slide rooms__slide">
+              <img
+                src="assets/img/rooms/bedroom.jpg"
+                alt="a bed in bedroom"
+                class="rooms__slide-img"
+              />
+              <div class="rooms__slide-arrival">News arrivals</div>
+              <div class="rooms__slide-title">Bedroom</div>
+            </div>
+            <div class="swiper-slide rooms__slide">
+              <img
+                src="assets/img/rooms/livingroom.jpg"
+                alt="a living room with pictures on the wall"
+                class="rooms__slide-img"
+              />
+              <div class="rooms__slide-arrival">News arrivals</div>
+              <div class="rooms__slide-title rooms__slide-title_livingroom">
+                Living room
+              </div>
+            </div>
+            <div class="swiper-slide rooms__slide">
+              <img
+                src="assets/img/rooms/bedroom.jpg"
+                alt="a bed in bedroom"
+                class="rooms__slide-img"
+              />
+              <div class="rooms__slide-arrival">News arrivals</div>
+              <div class="rooms__slide-title">Bedroom</div>
+            </div>
+          </div>
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+        <div class="rooms__footer">
+          <div class="rooms__btn-next">Next</div>
+          <div class="rooms__swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+     <section class="benefits">
       <div class="container">
         <div class="benefits__wrap">
           <h2 class="section-title">
@@ -144,6 +222,10 @@
         </ul>
       </div>
     </section>
+    
+    
+    <!-- Swiper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     
     <script src="assets/js/main.min.js"></script>
     

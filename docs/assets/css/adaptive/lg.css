@@ -81,3 +81,16 @@
     margin-top: 0;
     flex-shrink: 2;
 }
+
+.rooms {
+    padding-top: 64px;
+    padding-bottom: 70px;
+}
+
+.rooms__swiper {
+    height: 350px;
+}
+
+.rooms__slide-title {
+    font-size: 3.4375rem;
+}

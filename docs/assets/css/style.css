@@ -224,6 +224,13 @@ a {
     line-height: 2.5rem;
 }
 
+.heading-text {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+}
+
 .header {
     padding-top: 50px;
     padding-bottom: 177px;
@@ -389,4 +396,75 @@ a {
     font-weight: 400;
     font-size: 1.125rem;
     line-height: 1.5625rem;
+}
+
+.rooms {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    background-color: #f3eee8;
+}
+
+.rooms__swiper {
+    height: 232px;
+    margin-top: 33px;
+}
+
+.rooms__swiper-pagination {
+    width: auto !important;
+    font-size: 1.125rem;
+    opacity: 0.9;
+}
+
+.rooms__slide {
+    display: flex;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.rooms__slide-img {
+    width: 50%;
+    height: 100%;
+    margin-right: 20px;
+}
+
+.rooms__slide-arrival {
+    color: rgba(0, 0, 0, 0.45);
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+}
+
+.rooms__slide-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #a06056;
+    font-size: 2.1875rem;
+    transform: translate(-50%, -50%);
+}
+
+.rooms__slide-title_livingroom {
+    left: 70%;
+}
+
+.rooms__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.rooms__btn-next {
+    font-family: "Karla", sans-serif;
+    color: #a06056;
+    font-weight: 700;
+    font-size: 1.25rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.rooms__btn-next.swiper-button-disabled {
+    opacity: 0.5;
 }

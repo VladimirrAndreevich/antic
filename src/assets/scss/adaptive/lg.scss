@@ -1,3 +1,5 @@
+@use "sass:math";
+
 // === variables ===
 @import "../_variables.scss";
 
@@ -75,5 +77,19 @@
   &__list {
     margin-top: 0;
     flex-shrink: 2;
+  }
+}
+
+// rooms
+.rooms {
+  padding-top: 64px;
+  padding-bottom: 70px;
+  &__swiper {
+    height: 350px;
+  }
+  &__slide {
+    &-title {
+      font-size: math.div(55px, 16px) + rem;
+    }
   }
 }

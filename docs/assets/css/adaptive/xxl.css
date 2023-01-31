@@ -1,0 +1,15 @@
+.container {
+    max-width: 1380px;
+}
+
+.nav {
+    margin-left: 64px;
+}
+
+.rooms__swiper {
+    height: 400px;
+}
+
+.rooms__btn-next {
+    font-size: 1.5625rem;
+}
