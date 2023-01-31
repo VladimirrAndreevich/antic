@@ -12,6 +12,14 @@
     line-height: 3.75rem;
 }
 
+.learn-more::after {
+    transition: margin-left 0.3s ease;
+}
+
+.learn-more:hover::after {
+    margin-left: 12px;
+}
+
 .header__tag {
     font-weight: 700;
     font-size: 1rem;
@@ -93,4 +101,20 @@
 
 .rooms__slide-title {
     font-size: 3.4375rem;
+}
+
+.rooms__btn-next::after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 15px;
+    margin-left: 7px;
+    background-image: url("../../img/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: margin-left 0.3s ease;
+}
+
+.rooms__btn-next:hover::after {
+    margin-left: 12px;
 }

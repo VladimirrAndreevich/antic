@@ -231,6 +231,30 @@ a {
     line-height: 1.5625rem;
 }
 
+.learn-more {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    font-family: "Karla", sans-serif;
+    color: #a06056;
+    font-weight: 700;
+    font-size: 1.0625rem;
+    line-height: 1.5625rem;
+}
+
+.learn-more::after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 14px;
+    margin-left: 7px;
+    background-image: url("../img/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    transform: translateY(1px);
+}
+
 .header {
     padding-top: 50px;
     padding-bottom: 177px;
@@ -455,6 +479,8 @@ a {
 }
 
 .rooms__btn-next {
+    display: flex;
+    align-items: center;
     font-family: "Karla", sans-serif;
     color: #a06056;
     font-weight: 700;
@@ -467,4 +493,53 @@ a {
 
 .rooms__btn-next.swiper-button-disabled {
     opacity: 0.5;
+}
+
+.subscribe {
+    padding-top: 48px;
+    padding-bottom: 32px;
+}
+
+.subscribe .heading-text {
+    margin-top: 16px;
+}
+
+.subscribe__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    gap: 16px;
+}
+
+.subscribe__email {
+    height: 50px;
+    padding: 12px 15px;
+    border: none;
+    background-color: #f3eee8;
+}
+
+.subscribe__email::-moz-placeholder {
+    font-family: "Varta", sans-serif;
+    font-size: 1.125rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.subscribe__email::placeholder {
+    font-family: "Varta", sans-serif;
+    font-size: 1.125rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.subscribe__email:focus {
+    outline: 1px solid #534b42;
+}
+
+.subscribe__submit {
+    height: 50px;
+    border: none;
+    background-color: #534b42;
+    font-family: "Karla", sans-serif;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.0625rem;
 }

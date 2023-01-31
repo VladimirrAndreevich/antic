@@ -10,3 +10,7 @@
 .benefits__item {
     flex: 1 1 46%;
 }
+
+.rooms .heading-text {
+    max-width: 329px;
+}
