@@ -64,3 +64,7 @@
 .inspirations__swiper {
     display: block;
 }
+
+.footer__nav {
+    justify-content: space-evenly;
+}

@@ -186,3 +186,54 @@
     margin-right: 10px;
     transform: rotate(180deg);
 }
+
+.footer {
+    padding-top: 70px;
+    padding-bottom: 64px;
+}
+
+.footer__main {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__nav {
+    justify-content: center;
+    -moz-column-gap: 48px;
+    column-gap: 48px;
+}
+
+.footer__respect {
+    max-width: 235px;
+}
+
+.footer__settings {
+    margin-bottom: 0;
+    order: 1;
+}
+
+.footer__bottom {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__list-products {
+    order: 1;
+}
+
+.footer__list-rooms {
+    order: 2;
+}
+
+.footer__list-services {
+    order: 3;
+}
+
+.footer__list-about {
+    order: 4;
+}

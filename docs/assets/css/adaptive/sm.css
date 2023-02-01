@@ -27,3 +27,9 @@
         justify-content: space-between;
     }
 }
+
+.footer__nav {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

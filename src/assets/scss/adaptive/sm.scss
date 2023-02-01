@@ -39,3 +39,14 @@
     }
   }
 }
+
+// footer
+.footer {
+  &__nav {
+    flex-direction: row;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+  }
+
+}

@@ -195,3 +195,47 @@
     transform: rotate(180deg);
   }
 }
+
+// footer
+.footer {
+  padding-top: 70px;
+  padding-bottom: 64px;
+  &__main {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__nav {
+    justify-content: center;
+
+    column-gap: 48px;
+  }
+  &__respect {
+    max-width: 235px;
+  }
+  &__settings {
+    margin-bottom: 0;
+
+    order: 1;
+  }
+  &__bottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    &-products {
+      order: 1;
+    }
+    &-rooms {
+      order: 2;
+    }
+    &-services {
+      order: 3;
+    }
+    &-about {
+      order: 4;
+    }
+  }
+}
