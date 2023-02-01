@@ -56,3 +56,11 @@ var swiperInspirations = new Swiper(".inspirations__swiper", {
   },
 });
 console.log(3)
+
+const navItems = document.querySelectorAll(".nav-mobile__item");
+
+navItems.forEach((element) =>
+  element.addEventListener("click", () => {
+    document.getElementById("menu").classList.toggle("hidden");
+  })
+);
