@@ -52,3 +52,15 @@
     -moz-column-gap: 40px;
     column-gap: 40px;
 }
+
+.inspirations__title {
+    font-size: 2.5rem;
+}
+
+.inspirations__list {
+    display: none;
+}
+
+.inspirations__swiper {
+    display: block;
+}

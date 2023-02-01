@@ -410,3 +410,57 @@ a {
     font-size: math.div(17px, 16px) + rem;
   }
 }
+
+// inspirations
+.inspirations {
+  padding-top: 32px;
+  padding-bottom: 48px;
+
+  &__title {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    color: $additional-color;
+    font-size: math.div(35px, 16px) + rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 20px;
+
+    margin-top: 40px;
+  }
+
+  &__item {
+    &-title {
+      margin-top: 15px;
+
+      font-family: "Lato", sans-serif;
+      font-weight: 400;
+      color: #121212;
+      font-size: math.div(15px, 16px) + rem;
+    }
+  }
+
+  &__swiper {
+    display: none;
+
+    margin-bottom: 40px;
+
+    height: 400px;
+  }
+
+  &__slide {
+    height: 100%;
+  }
+
+  &__slide-img {
+    height: 100%;
+    width: 300px;
+  }
+  & .swiper-wrapper .swiper-slide {
+    width: 300px;
+  }
+}

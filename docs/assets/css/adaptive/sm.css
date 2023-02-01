@@ -21,3 +21,9 @@
     -moz-column-gap: 20px;
     column-gap: 20px;
 }
+
+@media (min-width: 710px) {
+    .inspirations__list {
+        justify-content: space-between;
+    }
+}

@@ -37,3 +37,11 @@
     -moz-column-gap: 100px;
     column-gap: 100px;
 }
+
+.inspirations__swiper {
+    height: 550px;
+}
+
+.inspirations .swiper-wrapper .swiper-slide {
+    width: 458px;
+}

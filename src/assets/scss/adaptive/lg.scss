@@ -133,3 +133,63 @@
     padding-right: 29px;
   }
 }
+
+// inspirations
+.inspirations {
+  &__title {
+    font-size: math.div(45px, 16px) + rem;
+  }
+  &__swiper {
+    height: 500px;
+  }
+  & .swiper-wrapper .swiper-slide {
+    width: 420px;
+  }
+  &__slide-img {
+    width: auto;
+  }
+  &__main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    & > .heading-text {
+      width: 359px;
+      margin-top: 0;
+    }
+  }
+
+  &__pagination {
+    font-size: math.div(18px, 16px) + rem;
+    opacity: 0.9;
+  }
+
+  &__navigation {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  &__navigation-prev,
+  &__navigation-next {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+
+    background-image: url(../../img/btn-arrow.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+
+    &.swiper-button-disabled {
+      opacity: 0.4;
+      cursor: initial;
+    }
+  }
+
+  &__navigation-prev {
+    margin-right: 10px;
+
+    transform: rotate(180deg);
+  }
+}

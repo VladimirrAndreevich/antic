@@ -30,3 +30,12 @@
     column-gap: 20px;
   }
 }
+
+// inspirations
+.inspirations {
+  @media (min-width: 710px) {
+    &__list {
+      justify-content: space-between;
+    }
+  }
+}

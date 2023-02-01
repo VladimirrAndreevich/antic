@@ -39,4 +39,20 @@ var swiper = new Swiper(".rooms__swiper", {
     },
   },
 });
+
+var swiperInspirations = new Swiper(".inspirations__swiper", {
+  // Optional parameters
+  slidesPerView: "auto",
+  spaceBetween: 30,
+  grabCursor: true,
+
+  pagination: {
+    el: ".inspirations__pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".inspirations__navigation-next",
+    prevEl: ".inspirations__navigation-prev",
+  },
+});
 console.log(3)

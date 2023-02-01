@@ -65,3 +65,18 @@
     column-gap: 40px;
   }
 }
+
+// inspirations
+.inspirations {
+  &__title {
+    font-size: math.div(40px, 16px) + rem;
+  }
+
+  &__list {
+    display: none;
+  }
+
+  &__swiper {
+    display: block;
+  }
+}

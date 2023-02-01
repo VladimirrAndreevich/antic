@@ -39,3 +39,13 @@
     column-gap: 100px;
   }
 }
+
+// inspirations
+.inspirations {
+  &__swiper {
+    height: 550px;
+  }
+  & .swiper-wrapper .swiper-slide {
+    width: 458px;
+  }
+}
