@@ -161,6 +161,10 @@ table {
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .body {
     color: #706458;
     font-family: "Varta", sans-serif;
