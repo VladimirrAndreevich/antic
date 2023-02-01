@@ -6,6 +6,12 @@
     margin-left: 64px;
 }
 
+@media (min-width: 1900px) {
+    .header {
+        background-position-x: 49.5vw;
+    }
+}
+
 .rooms__swiper {
     height: 400px;
 }

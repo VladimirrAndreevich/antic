@@ -12,6 +12,13 @@
   margin-left: 64px;
 }
 
+// header
+.header {
+  @media (min-width: 1900px) {
+    background-position-x: 49.5vw;
+  }
+}
+
 // rooms
 .rooms {
   &__swiper {
