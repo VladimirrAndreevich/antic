@@ -1,6 +1,6 @@
 const btn = document.getElementById("burger");
 const nav = document.getElementById("menu");
-
+const closeBlock = document.getElementById("close-block");
 const close_menu = document.getElementById("close-menu");
 
 function toggleScroll() {
@@ -8,20 +8,29 @@ function toggleScroll() {
 }
 
 btn.addEventListener("click", () => {
+  closeBlock.classList.toggle("hidden");
+  nav.classList.toggle("hidden");
+  toggleScroll();
+});
+
+closeBlock.addEventListener("click", () => {
+  closeBlock.classList.toggle("hidden");
   nav.classList.toggle("hidden");
   toggleScroll();
 });
 
 close_menu.addEventListener("click", () => {
+  closeBlock.classList.toggle("hidden");
   nav.classList.toggle("hidden");
   toggleScroll();
 });
 
 const navLinks = document.getElementsByClassName("nav-mobile__link");
-
 for (let index = 0; index < navLinks.length; index++) {
   navLinks[index].addEventListener("click", () => {
     toggleScroll();
+    closeBlock.classList.toggle("hidden");
+    nav.classList.toggle("hidden");
   });
 }
 var swiper = new Swiper(".rooms__swiper", {
@@ -70,11 +79,3 @@ var swiperInspirations = new Swiper(".inspirations__swiper", {
   },
 });
 console.log(3)
-
-const navItems = document.querySelectorAll(".nav-mobile__item");
-
-navItems.forEach((element) =>
-  element.addEventListener("click", () => {
-    document.getElementById("menu").classList.toggle("hidden");
-  })
-);

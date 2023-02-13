@@ -194,15 +194,16 @@ a {
 }
 
 .nav-mobile {
-  &::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 30%;
-    background-color: rgba(0, 0, 0, 0.6);
-  }
+  // &::before {
+  //   content: "";
+  //   position: fixed;
+  //   top: 0;
+  //   bottom: 0;
+  //   left: 0;
+  //   width: 30%;
+  //   background-color: rgba(0, 0, 0, 0.6);
+  // }
+
   position: fixed;
   right: 0;
   top: 0;
@@ -216,6 +217,16 @@ a {
   background-color: $bg-color;
 
   z-index: 5;
+
+  &__close-block {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 
   &__link {
     display: block;
