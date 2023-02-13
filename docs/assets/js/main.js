@@ -3,13 +3,27 @@ const nav = document.getElementById("menu");
 
 const close_menu = document.getElementById("close-menu");
 
+function toggleScroll() {
+  document.body.classList.toggle("stop-scrolling");
+}
+
 btn.addEventListener("click", () => {
   nav.classList.toggle("hidden");
+  toggleScroll();
 });
 
 close_menu.addEventListener("click", () => {
   nav.classList.toggle("hidden");
+  toggleScroll();
 });
+
+const navLinks = document.getElementsByClassName("nav-mobile__link");
+
+for (let index = 0; index < navLinks.length; index++) {
+  navLinks[index].addEventListener("click", () => {
+    toggleScroll();
+  });
+}
 var swiper = new Swiper(".rooms__swiper", {
   // Optional parameters
   slidesPerView: "auto",

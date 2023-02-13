@@ -29,6 +29,11 @@ html {
   font-weight: 400;
 }
 
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
 .container {
   width: 100%;
   padding-left: 32px;
@@ -209,6 +214,8 @@ a {
   width: 70%;
 
   background-color: $bg-color;
+
+  z-index: 5;
 
   &__link {
     display: block;
